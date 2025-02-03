@@ -1,0 +1,1401 @@
+*{
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.9rem;
+  
+  
+}
+
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+  /*=========================================================== NAVIGATION SECTION ====================================================*/
+
+ 
+
+  .nav-menu a, li {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: Anton;
+    list-style: none;
+    -webkit-text-stroke: 0.70px #a21919;
+    
+  }
+ 
+  
+.navbar-container {
+  display: flex;
+ 
+}
+
+  .navbar {
+  
+      position: fixed;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      padding: 0.875rem 3%;
+      background-color: #a21919;
+      width: 100%;
+      height: auto;
+      transition: 300ms ease-in-out background-color;
+      z-index: 1;
+      
+    }
+  
+    .logo {
+      cursor:pointer;
+      
+    }
+
+  
+    .nav-menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-right: 6rem;
+      
+    }
+
+    .nav-menu ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      text-align: center;
+      display: flex;
+      
+    }
+  
+   
+  
+  
+  
+  .nav-link{
+      transition: 0.7 ease;
+  }
+  
+    .nav-link:hover{
+      color:#d4af37;
+      transition: 0.5s;
+    }
+  
+
+    .navbar-container .social-media {
+      display: inline;
+      
+      }
+
+    .hamburger{
+      display: none;
+      cursor: pointer;
+    }
+  
+  
+    .bar{
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #d4af37;
+    }
+  
+
+    .active-nav {
+
+      background-color: #a21919;
+    }
+
+ 
+    
+
+
+    
+
+
+  /*============================================================ HERO SECTION ===========================================================*/
+
+  #hero {
+      background-image: url('../images/valmaromepageheropic.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:top;
+      text-align: center;
+      
+      background-blend-mode: color;
+      height: 40rem;
+      
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      
+      }
+
+
+      #hero h1, #page-hero h1 {
+
+        font-family: Anton;
+        font-size: 2.70rem;
+        color:#fff;
+        text-transform: uppercase;
+        -webkit-text-stroke: 0.30px #a21919;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+     .selected {
+        animation: fadeInAnimation ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+    }
+
+    .unselected {
+      
+      color:rgb(15, 15, 15);
+      
+  }
+      
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+         }
+    }
+
+
+
+
+  /*=========================================================== UTILITIES ================================================================*/
+
+  .container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    
+    }
+
+
+    .split {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header { 
+
+      padding: 6rem 0;
+      }
+    
+    section {
+      padding: 3rem 0;
+      
+      }
+
+      footer {
+        padding: 2rem 0;
+        
+        }
+
+        .wrapper {
+          
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+
+        .sear {
+          height: 2rem;
+          width: 10rem;
+          margin-top: 0.75rem;
+          font-size: 1rem;
+          background-image: url('../images/magnifying\ glass\ icon.png');
+          background-repeat: no-repeat;
+          background-position: right center;
+          outline: 0;
+          
+
+        }
+
+        .results {
+          padding: 0px;
+          position: fixed;
+        }
+        
+        .results ul {
+          margin: 0; 
+          padding: 0; 
+          
+        }
+        
+
+       
+
+        .results ul li {
+          list-style: none;
+          border-radius: 3px;
+          opacity: 0;
+          display: none;
+          padding: 8px 42px;
+        
+          transition: all .5s linear;
+          
+        }
+
+        .show .results ul li {
+          opacity: 1;
+          display: block;
+          background-color: #a21919;
+          
+        }
+
+      
+
+
+      .btn {
+        
+        font-family: Raleway;	
+        color: #a21919;
+        background-color: transparent;
+        opacity: 0.9;
+        transition: 0.3s;
+        border: solid 0.20rem #a21919;
+        border-radius: 0px;
+        padding: 0.7rem 2rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        cursor: pointer;
+        
+        
+        
+        }
+
+        .btn:hover {
+          background-color: #a21919;
+          color: #fff;
+          opacity: 1;
+          transition: 0.5s;
+        }
+
+
+      .beverage {
+        box-shadow: 0 1px 1px 0 rgba(0, 1.5, 1.5, 2);
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
+      }
+
+      .page {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0.75rem 1rem;
+        border-radius: #a21919;
+        background-color: whitesmoke;
+        margin-bottom: 6rem;
+      }
+
+      .page li {
+        margin: 0.25rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        color: #151515;
+      }
+
+      .page a:hover li {
+        color:#a21919;
+      }
+
+      .page a.active li {
+
+        background-color:#a21919;
+        color:#fff;
+
+      }
+
+      .pagination .btn {
+
+        font-family: Raleway;	
+        color: #a21919;
+        background-color: transparent;
+        opacity: 0.9;
+        transition: 0.3s;
+        border: solid 0.20rem #a21919;
+        border-radius: 0px;
+        padding: 0.4rem 0.70rem;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        cursor: pointer;
+
+      }
+
+      .pagination .btn:hover {
+        background-color: #a21919;
+        color: #fff;
+        opacity: 1;
+        transition: 0.5s;
+      }
+    
+    
+    
+
+/*=================================================================== BEST SECTION ===========================================================*/
+
+.best h1,
+.products-preview h1,
+.contact h1 {
+
+  text-align: center;
+  font-family: Oswald;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: #fff;
+  border-bottom: 2.5px solid #d76209;
+  border-top: 2.5px solid #d76209;
+  border-right: 2.5px solid #d76209;
+  border-left: 2.5px solid #d76209;
+  background-color: rgb(230, 156, 18);
+}
+
+
+
+.bottles {
+
+  
+  cursor: pointer;
+}
+
+#zoom {
+  transition: transform .2s;
+}
+
+#zoom:hover {
+  transform: scale(1.15);
+}
+
+.best .container {
+  text-align: center;
+}
+
+
+
+.best h2 {
+
+  text-transform: uppercase;
+  font-family: Oswald;
+  text-align: center;
+  color: #a21919;
+  margin-bottom: 1rem;
+}
+
+
+
+/*================================================================== ABOUT PREVIEW AND STORE HOURS DIV ===========================================================*/
+
+.about-preview, .store-hours, .thanks {
+  background-image: url('../images/drinks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+  text-align: center;
+  
+  background-blend-mode: color;
+  height: 80rem;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  
+  }
+
+  .about-box, .hours {
+
+    padding: 0.75rem 0.4rem;
+    border: solid 0.125rem rgba(10, 10, 10, 0.822);
+    
+    background-color: rgba(240, 231, 231, 0.75);
+  }
+
+  .about-preview h1, .store-hours h1 {
+
+    color:#a21919;
+    font-family: oswald;
+    font-weight: 600;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+
+    
+  }
+
+  .about-preview h2 {
+
+    font-size: 2rem;
+    color:rgb(11, 11, 11);
+    font-family: Dancing Script;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+  }
+
+  .store-hours h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color:rgb(11, 11, 11);
+    font-family: Oswald;
+    text-align: center;
+  }
+
+
+  /*============================================================ ABOUT PAGE ===========================================================*/
+
+  #page-hero {
+    background-image: url('../images/otherhero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    text-align: center;
+    
+    background-blend-mode: color;
+    height: 60rem;
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    
+    }
+
+    .valmarbio {
+      background-color: #d4af37;
+    }
+
+    .valmarbio h2, .valmarbio1 h2 {
+      text-align: center;
+      font-family: Oswald;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+     
+    }
+
+    .valmarbio h2 {
+      color:#a21919;
+    }
+
+    .valmarbio1 h2 {
+      color:#a21919;
+    }
+
+    .valmarbio h3, .valmarbio1 h3 {
+      text-align: center;
+      font-family: Raleway;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+     
+    }
+
+   
+
+
+    .valmarbio1 {
+      background-color: rgb(231, 235, 235);
+    }
+
+    .valmarbio img, .valmarbio1 img {
+
+      display: block;
+      max-width: 100%;
+
+    }
+
+
+
+
+/*============================================================= BEER WINE SPIRITS ===========================================================================*/
+
+.drinks {
+  height: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+ 
+  
+}
+
+.drinks .container {
+  text-align: center;
+  align-items: center;
+  
+}
+
+.drinks h2 {
+
+  margin-bottom: 1.5rem;
+  font-family: Oswald;
+  text-align: center;
+  text-transform: uppercase;
+  color: #a21919
+  
+
+}
+
+.placement {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+
+  /*============================================================ CONTACT PAGE ===========================================================*/
+
+ 
+   
+
+  .contact {
+    height: auto;
+   }
+     
+  
+  .contact-box {
+    background-color:#a21919;
+    height: 680px;
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  .map-responsive{
+  
+    overflow:hidden;
+    padding-bottom:40.75%;
+    position:relative;
+    
+  
+  }
+  
+  .map-responsive iframe{
+  
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  
+  }
+
+
+.contact .btn {
+        
+  font-family: Raleway;	
+  color: #d4af37;
+  background-color: transparent;
+  opacity: 0.9;
+  transition: 0.3s;
+  border: solid 0.20rem #d4af37;
+  border-radius: 0px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  cursor: pointer;
+  
+  
+  }
+
+
+  .contact .btn:hover {
+    border: solid 0.20rem #a21919;
+    background-color: #d4af37;
+    color: #a21919;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+label {
+  display: block;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: Raleway;
+  
+  
+}
+
+input {
+  height: 2rem;
+  width: 25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  
+}
+
+
+
+#message {
+  width: 25rem;
+  }
+
+.contact h3 {
+  color:#fff;
+  font-family: Raleway;
+}
+  
+  #form {
+  
+  color: white;
+  display: table;
+  padding: 1rem;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+
+  }
+
+  .thanks h1 {
+
+    color:#a21919;
+    font-family: oswald;
+    font-weight: 600;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+
+  }
+
+  .thanks h2 {
+
+    font-size: 2rem;
+    color:rgb(11, 11, 11);
+    font-family: Dancing Script;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  
+
+
+
+/*================================================================== PRODUCTS PREVIEW ======================================================*/
+
+.products-preview .container {
+  text-align: center;
+  
+}
+
+.products-preview h2 {
+
+  
+  font-family: Oswald;
+  text-align: center;
+  text-transform: uppercase;
+  color: #a21919;
+  font-size: 1.5rem;
+
+}
+
+.beverage h2 {
+
+  text-transform: uppercase;
+  font-family: Oswald;
+  text-align: center;
+  color: #a21919;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.beer {
+
+  cursor: pointer;
+
+}
+
+
+/*=================================================================== SOCIAL MEDIA DIV =====================================================*/
+
+.social-media-div {
+
+  background-color: rgb(230, 156, 18);
+
+
+}
+
+.social-media-div h1 {
+
+  color: #151515;
+  font-family: oswald;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-media-div h2 {
+
+  font-size: 2rem;
+  color: #151515;;
+  font-family: Dancing Script;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+
+}
+
+.social-media-footer {
+  text-align: center;
+  margin-top: 2rem;
+ 
+  
+}
+
+.social-media-icon-div {
+
+  justify-content: space-between;
+
+}
+
+
+/*================================================================= PRE FOOTER =============================================================*/
+
+      .pre-footer {
+
+      background-color: rgb(231, 235, 235);
+      text-align: center;
+      
+      height: auto;
+      }
+
+      .logo-prefooter img {
+        max-width: 100%;
+      }
+
+
+
+    /*========================================================== FOOTER ===================================================================*/
+
+    #footer {
+      background-color: black;
+      clear: both;
+      color: white;
+      height: auto;
+
+      }
+
+      #footer .container {
+        text-align: center;
+        align-content: center;
+      }
+
+  
+      .footer-logo img {
+     
+        max-width: 100%;
+      }
+
+      #footer h1, h2 {
+
+        font-family: raleway;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+
+    
+      
+      #footer p {
+      text-align: center;
+      display: block;
+      
+      
+      font-family: Raleway;  
+      }
+
+      .copyright {
+        background-color: #a21919;
+        text-align: center;
+        display: block;
+        font-family: Raleway; 
+        color: #fff;
+        padding: 0.75rem 0;
+      }
+
+      .footer-nav-menu {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+       
+        gap: 2rem;
+        
+      }
+  
+  
+  
+      .footer-nav-menu li, 
+      a {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 300;
+        text-decoration: none;
+        font-family: Raleway;
+        list-style: none;
+        
+        
+      }
+  
+      
+      .nav-footer{
+          transition: 0.7 ease;
+      }
+      
+        .nav-footer:hover{
+          color:#a21919;
+          transition: 0.5s;
+        }
+
+
+    
+/*================================================================== 12. MEDIA QUERIES =======================================================*/
+
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+  
+  .split > * {
+    flex-basis: 100%;
+  }
+  
+  .split > * + * {
+    margin-left: 2em;
+  }
+  }
+
+  @media (min-width: 40em) {
+    header,
+    section {
+      padding: 7rem 0;
+    }
+    } 
+
+@media (min-width: 640px) {
+  .drinks img {
+    display: block;
+    max-width: 100%;
+  }
+
+}
+
+/*media query for margin-right nav menu*/
+
+@media(max-width: 100rem) {
+
+  .nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 8.05rem;
+  }
+
+}
+
+  /*media query to reduce size of li, a*/
+
+@media (min-width: 30.9rem) and (max-width: 75.5rem) {
+
+  .nav-menu a, li
+   {
+      font-family: Anton;
+      text-decoration: none;
+      
+      font-size: 1.35rem;
+      
+      font-weight: 300;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      }
+
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .logo {
+    height: 35px;
+    width: 141px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  #footer .nav-menu li, 
+  a {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 0.80rem;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: Raleway;
+    list-style: none;
+    
+  }
+
+  #footer h1, h2 {
+    font-size: 0.80rem;
+  }
+
+      #footer p {
+          font-size: 0.75rem;
+          margin-left: 2px;
+          margin-left: 2px;
+      }
+
+      .copyright p {
+        font-size: 0.80rem;
+      }
+
+      .footer-logo {
+        height:185px;
+        width: 150px;
+      }
+
+      .drinks .beverage img {
+        height: 213px;
+        width: 174px;
+      }
+
+      .beverage img {
+        height: 300px;
+        width: 108px;
+      }
+
+      .drinks .beverage h2 {
+
+        text-transform: uppercase;
+        font-family: Oswald;
+        text-align: center;
+        color: #a21919;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+      
+}
+
+
+
+
+
+
+/*media query to hide search box, social media icons and nav bar links*/
+
+@media (max-width: 65.2rem){
+
+  .navbar .social-media{
+      font-family: Anton;
+      text-decoration: none;
+      
+      font-size: 1.35rem;
+      
+      font-weight: 300;
+      color: rgb(15, 15, 15);
+      text-decoration: none;
+      cursor: pointer;
+      display: none;
+      }
+
+}
+
+/*media query to SHOW HAMBURGER BUTTON*/
+
+@media (max-width: 65.131rem) {
+  .hamburger {
+      display: block;
+
+  }
+
+  .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+
+
+  .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 4.5rem;
+      gap: 0;
+      flex-direction: column;
+      background-color: #d4af37;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+
+  .nav-menu a, li
+  {
+     font-family: Anton;
+     text-decoration: none;
+     
+     font-size: 1.35rem;
+     
+     font-weight: 300;
+     color: rgb(15, 15, 15);
+     text-decoration: none;
+     cursor: pointer;
+     }
+
+     #footer .nav-link:hover{
+      color:#a21919;
+      transition: 0.5s;
+    }
+
+
+  .nav-link:hover{
+      color:#ffffff;
+    }
+
+  .nav-item{
+      margin: 1rem 0;
+
+  }
+
+  .nav-menu.active{
+      left: 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  #hero h1, #page-hero h1 {
+
+    font-size: 2.5rem;
+  }
+  
+
+}
+
+@media (max-width: 768px) {
+
+  #hero h1, #page-hero h1 {
+    font-size: 2.25rem;
+  }
+
+}
+
+/*===================================================== MEDIA QUERY FOR BOX SIZING BORDER MOBILE NAV MENU ==============================================================*/
+
+@media (max-width: 1040px) {
+
+  
+
+  
+    .navbar {
+    
+        position: fixed;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0.875rem 3%;
+        
+        width: 100%;
+        height: auto;
+        transition: 300ms ease-in-out background-color;
+        z-index: 1;
+        
+      }
+
+}
+
+/*============================== MEDIA QUERIES FOR H1, H2 AND H3 TAGS AT MOBILE VIEW ===================================================================*/
+
+@media (max-width: 495px) {
+
+
+#hero h1, #page-hero h1 {
+
+  font-size: 2rem;
+}
+
+.best h1,
+.products-preview h1 {
+
+  font-size: 1.5rem;
+  
+}
+
+
+
+
+
+.products-preview h2 {
+  font-size: 1.2rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.best h2, .products-preview h2 {
+
+  margin-bottom: 1.5rem;
+
+}
+
+.bottles {
+
+  height: 375px;
+  width: 135px;
+  
+
+}
+
+.valmarbio h3, .valmarbio1 h3 {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+ 
+}
+
+.valmarbio1 h2 {
+  margin-top: 2.5rem;
+}
+
+.about-preview h1, .store-hours h1, .thanks h1 {
+
+  font-size: 2rem;
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+}
+
+.about-preview h2, .thanks h2 {
+
+font-size: 1.55rem;
+
+}
+
+.store-hours h2 {
+
+  font-size: 1.25rem;
+
+}
+
+.beverage h2 {
+  font-size: 1.2rem;
+}
+
+
+#zoom {
+  transition: none;
+}
+
+#zoom:hover {
+  transform: none;
+}
+
+.about-preview {
+  background-image: url('../images/drinks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+  text-align: center;
+  background-color: rgba(240, 231, 231, 0.28);
+  background-blend-mode: color;
+  height: 60rem;
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  
+  }
+
+.social-media-div h1 {
+
+  font-size: 1.5rem;
+}
+
+.social-media-div h2 {
+
+  font-size: 1.5rem;
+}
+
+}
+
+.logo-prefooter {
+
+height: 264px;
+width: 219px;
+
+}
+
+
+
+@media (max-width: 515px) {
+
+  input {
+      height: 2rem;
+      width: 19rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      
+  }
+
+  #message {
+    width: 19rem;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 1630px) {
+
+#hero, #page-hero {
+
+  height: 28rem;
+
+}
+
+}
+
+@media (max-width: 500px) {
+
+  #hero, #page-hero {
+
+    height: 28rem;
+   
+    
+    }
+
+}
+
+@media (max-width: 402px) {
+
+  .page li {
+    margin: 0.25rem;
+    padding: 0.50rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #151515;
+  }
+
+  .pagination .btn {
+
+    font-family: Raleway;	
+    color: #a21919;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: 0.3s;
+    border: solid 0.20rem #a21919;
+    border-radius: 0px;
+    padding: 0.1rem 0.1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    cursor: pointer;
+
+  }
+
+  .pagination .btn:hover {
+    background-color: #a21919;
+    color: #fff;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+}
