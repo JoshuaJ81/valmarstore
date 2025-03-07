@@ -497,14 +497,14 @@ p {
   /*============================================================ ABOUT PAGE ===========================================================*/
 
   #page-hero {
-    background-image: url('../images/otherhero.jpg');
+    background-image: url('../images/kashish-grover-NsGRaPiosus-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:top;
     text-align: center;
     
     background-blend-mode: color;
-    height: 60rem;
+    height: 30rem;
     
     display: flex;
     flex-direction: column;
@@ -1352,7 +1352,7 @@ width: 219px;
 
   #hero, #page-hero {
 
-    height: 28rem;
+    height: 32rem;
    
     
     }
